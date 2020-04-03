@@ -49,6 +49,7 @@ App = {
 
   loadContract: async () => {
     // Create a JavaScript version of the smart contract
+    // Change Add Your Contract Name in the next line
     const smartcontract = await $.getJSON('YourSmartContractNameHere.json')
     App.contracts.SmartContract = TruffleContract(smartcontract)
     App.contracts.SmartContract.setProvider(App.web3Provider)
